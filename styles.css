@@ -1,0 +1,124 @@
+/* Hushfield Legal — shared styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:       #1a2a22;   /* dark mineral green */
+  --bg-card:  #223020;   /* slightly lighter card surface */
+  --text:     #e8ede9;   /* soft off-white */
+  --muted:    #9ab8a0;   /* muted green-grey */
+  --accent:   #5fbfaa;   /* muted aqua */
+  --accent-hover: #7ed6c1;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+header {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+header .site-name {
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+main {
+  width: 100%;
+  max-width: 680px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+  outline: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.back-link:hover,
+.back-link:focus {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2e4035;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #5a7a62;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
