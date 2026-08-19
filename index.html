@@ -3,29 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hushfield Legal &amp; Support</title>
+  <title>Hushfield — Ambient Sound for Quieter Moments</title>
+  <meta name="description" content="Hushfield is a quiet, local-first ambient sound application for sleep, focus, relaxation, and noise masking." />
+  <meta name="theme-color" content="#171C1A" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <p class="site-name">Hushfield</p>
-  </header>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <a href="./" class="brand-link" aria-label="Hushfield Home">
+        <!-- Hushfield Logo SVG / Mark (Replaceable) -->
+        <div class="brand-logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12C6 8 8 8 12 12C16 16 18 16 21 12" stroke="#C5A46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 12C8 10 9.5 10 12 12C14.5 14 16 14 18 12" stroke="#F2EBDD" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="brand-wordmark">hushfield</span>
+      </a>
 
-  <main>
-    <h1>Hushfield Legal &amp; Support</h1>
-    <p>This website contains Hushfield's legal policies and support information.</p>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="support/">Support</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav aria-label="Site pages">
-      <ul>
-        <li><a href="privacy/">Privacy Policy</a></li>
-        <li><a href="terms/">Terms of Use</a></li>
-        <li><a href="support/">Help &amp; Support</a></li>
-      </ul>
-    </nav>
-  </main>
+    <main class="site-main">
+      <section class="hero">
+        <span class="eyebrow">hushfield</span>
+        <h1>Ambient sound for quieter moments.</h1>
+        <p class="hero-subtitle">Sleep, focus, relax, and soften the noise around you.</p>
 
-  <footer>
-    &copy; Hushfield
-  </footer>
+        <div class="brand-pillar-box">
+          <div class="brand-pillar-title">Quiet &amp; Local-First</div>
+          <p>Designed with a local-first philosophy. Hushfield operates without user accounts, remote listening tracking, or third-party advertising.</p>
+        </div>
+      </section>
+
+      <section>
+        <span class="eyebrow">DIRECTORY</span>
+        <h2 id="legal-and-support">Legal &amp; Support</h2>
+        <p>Access official legal policies, privacy commitments, and support information for Hushfield.</p>
+
+        <div class="section-grid">
+          <a href="privacy/" class="card">
+            <div class="card-title">
+              <span>Privacy Policy</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+            <p class="card-desc">Review our complete Privacy Policy and learn how your data is handled on-device.</p>
+          </a>
+
+          <a href="support/" class="card">
+            <div class="card-title">
+              <span>Help &amp; Support</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+            <p class="card-desc">Get assistance with Hushfield, learn about app settings, or contact our support team.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-info">
+        <p>&copy; 2026 Hushfield</p>
+        <p>Operated by Aradhya Singh &middot; Ontario, Canada</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="privacy/">Privacy</a>
+        <a href="support/">Support</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>
