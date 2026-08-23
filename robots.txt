@@ -1,0 +1,1 @@
+﻿User-agent: *`nAllow: /`nSitemap: https://hushfield.xyz/sitemap.xml
