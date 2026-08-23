@@ -14,7 +14,7 @@
 
 - Background: `#111613`, surface: `#171d19`, raised surface: `#202720`.
 - Primary text: `#f5efe3`, secondary text: `#c9c2b5`, brass accent: `#c5a46d`.
-- Display type: Cormorant Garamond; UI type: Plus Jakarta Sans.
+- Display type: Cormorant Garamond; UI type: Manrope.
 - Borders are warm, low-contrast hairlines. Shadows are restrained and offset.
 
 ## Layout & Motion
