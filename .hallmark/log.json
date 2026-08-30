@@ -1,0 +1,25 @@
+[
+  {
+    "date": "2026-08-30",
+    "genre": "atmospheric",
+    "macrostructure": "Workbench",
+    "theme": "Hushfield Mineral (locked by DESIGN.md)",
+    "theme_axes": "dark / classical-serif / warm",
+    "nav": "N5 floating pill",
+    "footer": "Ft5 statement",
+    "components": "F4 step sequence, F5 annotated screenshot, C4 sticky bottom bar",
+    "enrichment": "none — real app captures in an iPhone frame",
+    "brief": "Hushfield · ambient sound app landing page redesign; palette held, new symbol logo, screenshots in iPhone mockups"
+  },
+  {
+    "date": "2026-08-23",
+    "genre": "atmospheric",
+    "macrostructure": "Split Studio",
+    "theme": "Hushfield Mineral",
+    "theme_axes": "dark / classical-serif / warm",
+    "nav": "N1a wordmark + links",
+    "footer": "Ft2 inline single line",
+    "enrichment": "none",
+    "brief": "Hushfield · original marketing landing page (inferred from CSS, pre-dates this log)"
+  }
+]

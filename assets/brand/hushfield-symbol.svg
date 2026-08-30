@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Hushfield">
-  <rect width="1024" height="1024" rx="180" fill="#0A1D17"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Hushfield No. 6 small h — white on teal</title>
+  <rect width="1024" height="1024" fill="#0A1D17"/>
   <path transform="translate(512 742.4) scale(1.1022222222) translate(-512 -774)" fill="#FFFFFF" d="m309.67578 774v-37.26563h58.35938v-472.5h-61.875v-37.26562h126.5625v239.76562q17.92968-37.96875 46.40625-57.30468 28.82812-19.33594 66.79687-19.33594 61.875 0 91.05469 35.50781 29.17969 35.50781 29.17969 110.74219v200.39062h57.65625V774H545.22266v-37.26563h55.89843v-180q0-68.55468-16.875-93.51562-16.52343-25.3125-59.41406-25.3125-45 0-68.55469 32.69531-23.55468 32.69531-23.55468 95.27344v170.85937h56.25V774Z"/>
 </svg>
