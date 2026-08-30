@@ -1,0 +1,79 @@
+/* Hushfield design tokens
+ * Hallmark · genre: atmospheric · theme: Hushfield Mineral (locked by DESIGN.md)
+ * Palette values are carried over unchanged from the previous build. Colour is
+ * expressed in hex rather than OKLCH so the brand values stay bit-exact.
+ * Axes — paper band: dark (L 8%) · display style: classical-serif · accent hue: warm (brass)
+ */
+
+:root {
+  /* ---- Paper & ink ------------------------------------------------ */
+  --color-paper:        #111613;  /* page ground            */
+  --color-paper-2:      #171d19;  /* raised surface         */
+  --color-paper-3:      #202720;  /* highest surface        */
+  --color-mineral:      #0a1d17;  /* brand tile behind the mark */
+  --color-ink:          #f5efe3;  /* primary text           */
+  --color-ink-muted:    #c9c2b5;  /* secondary text         */
+  --color-accent:       #c5a46d;  /* brass                  */
+
+  /* ---- Derived surfaces (never inline a new value; add it here) ---- */
+  --color-rule:         #f5efe326;
+  --color-rule-strong:  #f5efe33d;
+  --color-accent-soft:  #c5a46d33;
+  --color-accent-glow:  #74592826;
+  --color-scrim:        #0b0f0dcc;
+  --color-shadow:       #05080699;
+
+  /* ---- Device rail (iPhone frame) --------------------------------- */
+  --color-rail-hi:      #6c716b;
+  --color-rail-mid:     #3a3f3b;
+  --color-rail-lo:      #1d221f;
+  --color-rail-edge:    #00000080;
+  --color-rail-screen:  #060a08;
+
+  /* ---- Type ------------------------------------------------------- */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body:    "Manrope", "Segoe UI", system-ui, sans-serif;
+
+  /* Perfect-fourth scale (1.333) off a 1rem base */
+  --text-xs:   0.72rem;
+  --text-sm:   0.83rem;
+  --text-base: 1rem;
+  --text-md:   1.18rem;
+  --text-lg:   clamp(1.45rem, 1.1rem + 1.2vw, 1.85rem);
+  --text-xl:   clamp(2rem, 1.3rem + 2.6vw, 3.2rem);
+  --text-2xl:  clamp(2.6rem, 1.5rem + 4.2vw, 4.6rem);
+  --text-display: clamp(3rem, 1.6rem + 6vw, 6.4rem);
+
+  /* ---- Space (4pt scale) ------------------------------------------ */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1.25rem;
+  --space-lg:  2rem;
+  --space-xl:  3.25rem;
+  --space-2xl: 5.25rem;
+  --space-3xl: 8.5rem;
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+  --measure: 34rem;
+
+  /* ---- Rules & radii ---------------------------------------------- */
+  --rule-hair: 1px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+
+  /* ---- Motion ------------------------------------------------------ */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ---- Elevation scale (no arbitrary z-index) ---------------------- */
+  --z-base: 1;
+  --z-callout: 5;
+  --z-sticky: 20;
+  --z-nav: 30;
+  --z-skip: 40;
+}

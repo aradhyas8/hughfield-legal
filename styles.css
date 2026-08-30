@@ -137,21 +137,17 @@ header.site-header {
 }
 
 .brand-logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 32px;
   height: 32px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-gold);
-  border-radius: var(--radius-sm);
+  border-radius: 27%;
   flex-shrink: 0;
-  transition: border-color var(--transition-fast);
+  transition: opacity var(--transition-fast);
 }
 
 .brand-link:hover .brand-logo-mark,
 .brand-link:focus-visible .brand-logo-mark {
-  border-color: var(--accent-gold-hover);
+  opacity: 0.82;
 }
 
 .brand-wordmark, .brand-wordmark:visited {
