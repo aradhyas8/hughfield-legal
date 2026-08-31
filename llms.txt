@@ -1,6 +1,6 @@
 # Hushfield
 
-Hushfield is an ambient sound app for iPhone and Android designed for sleep, focus, relaxation, and noise masking. Twelve atmospheres; mixes layer up to four sounds; a sleep timer fades audio out gradually.
+Hushfield is an ambient sound app for iPhone and Android designed for sleep, focus, relaxation, and noise masking. A growing library of atmospheres; mixes layer up to four sounds; a sleep timer fades audio out gradually.
 
 - Website: https://hushfield.xyz/
 - Product: https://hushfield.xyz/product.md

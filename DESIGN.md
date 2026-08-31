@@ -43,9 +43,10 @@ All tokens live in [`tokens.css`](tokens.css) and are the single source of truth
 ## Copy rules
 
 Every number and product name on the page is taken from a real app capture in
-`assets/screenshots/` — twelve atmospheres, the four intents, the four-layer mix ceiling, the
+`assets/screenshots/` — the four intents, the four-layer mix ceiling, the
 62/38/26/72 % slider values, and the six named atmospheres. **Do not add a metric the app does
-not show.** If a proof slot has no real number, cut the slot.
+not show, and do not state a total atmosphere count — the library grows over time.** If a proof
+slot has no real number, cut the slot.
 
 ## Verified viewports
 
