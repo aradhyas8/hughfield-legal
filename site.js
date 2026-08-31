@@ -1,5 +1,5 @@
 const HUSHFIELD_LINKS = Object.freeze({
-  appStore: "https://example.com/hushfield-app-store",
+  appStore: "https://apps.apple.com/app/id6802781534",
   googlePlay: "https://example.com/hushfield-google-play",
   privacy: "https://legal.hushfield.xyz/privacy/",
   terms: "https://legal.hushfield.xyz/terms/",
