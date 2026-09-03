@@ -30,7 +30,7 @@
     <main class="site-main">
       <span class="eyebrow">LEGAL</span>
       <h1>Privacy Policy</h1>
-      <p class="effective-date"><strong>Effective Date:</strong> September 2, 2026</p>
+      <p class="effective-date"><strong>Effective Date:</strong> September 3, 2026</p>
 
       <nav class="toc-box" aria-label="Table of Contents">
         <div class="toc-title">Table of Contents</div>
@@ -73,26 +73,24 @@
         <p>Because Hushfield does not require account registration or login, we do not collect user account profiles, names, physical mailing addresses, telephone numbers, passwords, or health data unless provided voluntarily through support communications. Hushfield does not request or collect precise GPS location. Limited coarse location information may be inferred from an IP address by analytics or infrastructure providers as described below. The information handled in connection with Hushfield falls into the distinct categories described below.</p>
 
         <h2 id="information-stored-only-on-your-device">Information Stored Only on Your Device</h2>
-        <p>The vast majority of your interactions with Hushfield are processed and stored exclusively on your local device. This local data includes:</p>
+        <p>Hushfield is built on a local-first model where your detailed personal audio environment, media files, and listening data remain strictly on your device. This locally stored data includes:</p>
         <ul>
-          <li>Onboarding completion status and in-progress onboarding checkpoints</li>
-          <li>Onboarding selections, personalization choices, and wellness goal preferences (such as sleep, focus, relax, or noise-masking preferences)</li>
-          <li>Favorite sounds and saved Places</li>
-          <li>Saved mixes, custom mix layer configurations, sound selections, and volume settings</li>
+          <li>Detailed listening history and session history (including sound and mix identifiers, start times, durations, and completion or skip flags)</li>
+          <li>Saved custom mixes, mix layer audio configurations, sound selections, and individual layer volume settings</li>
           <li>Application settings (such as background playback preferences, default timer lengths, fade-out durations, and category selections)</li>
-          <li>Current and recent playback state and sleep-timer/checkpoint state</li>
-          <li>Detailed listening history and session history (including sound/mix identifiers, start times, durations, and completion or skip flags)</li>
-          <li>Recommendation inputs and preferences derived locally from your on-device listening activity</li>
+          <li>Current and recent playback checkpoint state and sleep-timer state</li>
           <li>Downloaded audio files, artwork files, and local cache registries used for offline playback</li>
+          <li>Recommendation inputs and preferences derived locally from your on-device listening activity</li>
+          <li>Local configuration records for onboarding completion status, personalization choices, and favorite sounds or saved Places</li>
         </ul>
-        <p>The underlying contents of your saved mixes, detailed listening history, local settings, downloaded media, and local playback state remain stored on your device and are not uploaded to PostHog or external servers. Hushfield separately sends limited product-analytics events describing how features are used. For example, Hushfield may record that a Place was played, a feature was used, onboarding was completed, or a mix was saved, together with limited identifiers and device/app metadata described in the Product Analytics section. Your detailed listening history is processed strictly on-device to provide personalized sound recommendations on your home screen. You can permanently delete all locally stored data at any time from within the app by navigating to <strong>Settings &rarr; Delete all local data</strong>, or by clearing downloaded media via <strong>Settings &rarr; Clear downloaded sounds</strong>.</p>
+        <p>The detailed underlying contents of your saved mixes, listening history, local settings, downloaded media, and local playback state remain stored exclusively on your device and are not uploaded to Hushfield servers or PostHog. As described in the Product Analytics section, Hushfield may separately transmit limited, pseudonymous interaction events when you use certain features—such as recording that an onboarding goal was selected, onboarding was progressed or completed, a Place was started, a favorite was toggled, a feature was accessed, or a mix was saved. These high-level analytics events reflect feature usage and do not contain your complete saved mix configurations, full listening history, or raw on-device preference databases. Your detailed listening history is processed strictly on-device to provide personalized sound recommendations on your home screen. You can permanently delete all locally stored data at any time from within the app by navigating to <strong>Settings &rarr; Delete all local data</strong>, or by clearing downloaded media via <strong>Settings &rarr; Clear downloaded sounds</strong>.</p>
 
         <h2 id="subscription-and-purchase-information">Subscription and Purchase Information</h2>
         <p>Hushfield offers optional paid subscriptions. We use RevenueCat to manage subscriptions, validate purchases, and verify feature entitlements across iOS and Android.</p>
         <p>When you purchase or manage a subscription, information processed through RevenueCat may include:</p>
         <ul>
           <li>An anonymous, randomly generated RevenueCat App User ID (no custom user identifier or login is created by Hushfield)</li>
-          <li>Subscription status, plan type, and entitlement identifiers (such as Pro access)</li>
+          <li>Subscription status, plan type, and paid subscription entitlement identifiers</li>
           <li>Purchase history, transaction identifiers, and renewal/expiration timestamps</li>
           <li>Product and offering identifiers</li>
         </ul>
@@ -104,7 +102,7 @@
         <p>Hushfield uses PostHog for first-party product analytics to understand how the app is used, measure feature engagement, diagnose product-flow issues, and improve Hushfield. Based on our implementation, the information processed through PostHog includes the following categories:</p>
         <ul>
           <li><strong>Pseudonymous Identifier:</strong> A randomly generated persistent device/analytics identifier created by the PostHog SDK on your device. Hushfield does not send PostHog your name or email address, and Hushfield does not call PostHog identify or login methods to associate analytics data with a Hushfield user account or real-world identity.</li>
-          <li><strong>Product Interaction Data:</strong> Pseudonymous interaction events recording how features are used. Examples may include screen views, app lifecycle events (such as app open or backgrounding), onboarding interactions and selected onboarding goals, Place identifiers and certain playback interactions, such as starting a Place, favorite interactions, Living Place and feature interactions, mix-builder save events (recording that a mix was saved, without uploading the mix configuration), paywall impressions, selected subscription plans, purchase funnel interactions, and restore events.</li>
+          <li><strong>Product Interaction Data:</strong> Pseudonymous interaction events recording how features are used. Examples may include screen views, app lifecycle events (such as app open or backgrounding), button/touch interactions or similar interface interactions captured for product analytics, onboarding interactions and selected onboarding goals, Place identifiers and certain playback interactions, such as starting a Place, favorite interactions, Living Place and feature interactions, feature-flag evaluation or feature-usage analytics, mix-builder save events (recording that a mix was saved, without uploading the mix configuration), paywall impressions, selected subscription plans, purchase funnel interactions, and restore events. Touch interactions are captured strictly to understand navigation flows; Hushfield does not record text input, raw screen contents, audio, or session recordings, and session replay remains disabled.</li>
           <li><strong>Device and App Metadata:</strong> Standard technical metadata collected by the analytics SDK to ensure compatibility and diagnose issues, such as app version and build number, operating system and version, device model or type, device locale and language, timezone, screen dimensions, and network reachability metadata.</li>
           <li><strong>IP Address and Coarse Location:</strong> Standard network requests to the analytics endpoint inherently transmit your device's IP address. PostHog may process the IP address using GeoIP lookup to infer coarse, approximate location data (such as country, region, and city). Hushfield does not request or collect precise GPS location for analytics or any other purpose.</li>
         </ul>
