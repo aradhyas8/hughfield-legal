@@ -1,9 +1,9 @@
 const HUSHFIELD_LINKS = Object.freeze({
   appStore: "https://apps.apple.com/app/id6802781534",
   googlePlay: "https://play.google.com/store/apps/details?id=com.inethan18.hushfield",
-  privacy: "https://legal.hushfield.xyz/privacy/",
-  terms: "https://legal.hushfield.xyz/terms/",
-  support: "https://legal.hushfield.xyz/support/"
+  privacy: "/privacy/",
+  terms: "/terms/",
+  support: "/support/"
 });
 
 document.querySelectorAll("[data-link]").forEach(a => {
