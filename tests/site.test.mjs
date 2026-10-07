@@ -11,10 +11,15 @@ function run(hostname, globalPrivacyControl = false) {
     href: '',
     addEventListener(_event, handler) { this.click = handler; }
   }));
+  const legalLinks = ['privacy', 'terms', 'support'].map((link) => ({
+    dataset: { link },
+    href: `https://legal.hushfield.xyz/${link}/`
+  }));
+  const allLinks = [...links, ...legalLinks];
   const audio = { addEventListener(_event, handler) { this.play = handler; } };
   const document = {
     referrer: 'https://search.example/results?q=private',
-    querySelectorAll(selector) { return selector === '[data-link]' || selector === '[data-placement]' ? links : []; },
+    querySelectorAll(selector) { return selector === '[data-link]' ? allLinks : selector === '[data-placement]' ? links : []; },
     querySelector(selector) { return selector === '.sound-preview audio' ? audio : null; },
     getElementById() { return null; }
   };
@@ -23,7 +28,7 @@ function run(hostname, globalPrivacyControl = false) {
     crypto: { randomUUID: () => 'visit-id' }, URL, innerWidth: 390, window: {},
     fetch(_url, options) { sent.push(JSON.parse(options.body)); return Promise.resolve(); }
   });
-  return { sent, links, audio };
+  return { sent, links, legalLinks, audio };
 }
 
 const live = run('hushfield.xyz');
@@ -32,6 +37,7 @@ assert.equal(live.sent[0].properties.referrer_domain, 'search.example');
 assert.equal(live.sent[0].properties.$process_person_profile, false);
 assert.equal(live.links[0].href, 'https://apps.apple.com/app/id6802781534');
 assert.equal(live.links[1].href, 'https://play.google.com/store/apps/details?id=com.inethan18.hushfield');
+assert.deepEqual(live.legalLinks.map(link => link.href), ['/privacy/', '/terms/', '/support/']);
 live.links[1].click();
 assert.equal(live.sent[1].event, 'store_click');
 assert.equal(live.sent[1].properties.store, 'google_play');

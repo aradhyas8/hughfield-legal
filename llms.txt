@@ -4,6 +4,6 @@ Hushfield is an ambient sound app for iPhone and Android designed for sleep, foc
 
 - Website: https://hushfield.xyz/
 - Product: https://hushfield.xyz/product.md
-- Privacy: https://legal.hushfield.xyz/privacy/
-- Terms: https://legal.hushfield.xyz/terms/
-- Support: https://legal.hushfield.xyz/support/
+- Privacy: https://hushfield.xyz/privacy/
+- Terms: https://hushfield.xyz/terms/
+- Support: https://hushfield.xyz/support/
