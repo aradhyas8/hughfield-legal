@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hushfield — Your room, somewhere quieter.</title>
+<title>Hushfield — Ambient sounds for sleep and focus</title>
 <meta name="description" content="Hushfield is an ambient sound app for iPhone and Android. Atmospheres for sleep, focus, and masking noise — layer up to four sounds, then let them fade.">
 <meta name="theme-color" content="#111613">
 <link rel="canonical" href="https://hushfield.xyz/">
 <link rel="icon" href="favicon.svg">
 <link rel="apple-touch-icon" href="assets/brand/hushfield-icon-1024.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hushfield — Your room, somewhere quieter.">
-<meta property="og:description" content="Atmospheres for sleep, focus, and blocking out the world.">
+<meta property="og:title" content="Hushfield — Ambient sounds for sleep and focus">
+<meta property="og:description" content="Choose a place, tune its sounds, and find quiet for sleep or focus.">
 <meta property="og:image" content="https://hushfield.xyz/assets/screenshots/corner-table-player.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/screenshots/corner-table-player.jpeg" fetchpriority="high">
 <link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="marketing.css">
+<link rel="stylesheet" href="marketing.css?v=20261007c">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Hushfield","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"Hushfield is an ambient sound app for iPhone and Android designed for sleep, focus, relaxation, and noise masking."}</script>
-<script src="site.js" defer></script>
+<script src="site.js?v=20261007e" defer></script>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
     <li><a href="#library">Library</a></li>
     <li><a data-link="privacy" href="https://legal.hushfield.xyz/privacy/">Privacy</a></li>
   </ul>
-  <a class="btn btn--fill" data-link="appStore" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">Get the app</a>
+  <a class="btn btn--fill" href="#download">Choose store</a>
 </nav>
 
 <main id="main">
@@ -46,22 +46,24 @@
   <!-- ───────────────────────────── Hero ───────────────────────────── -->
   <section class="hero">
     <div class="hero__copy">
-      <h1 class="reveal" style="--i:0">Your room,<br><span class="accent">somewhere quieter.</span></h1>
-      <p class="lede reveal" style="--i:1">Atmospheres for sleep, focus, and blocking out the world. Layer up to four sounds into one, then let it fade while you drift.</p>
-      <div class="stores reveal" style="--i:2">
-        <a class="store" data-link="appStore" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">
+      <p class="hero__kicker reveal" style="--i:0">Your room, somewhere quieter.</p>
+      <h1 class="reveal" style="--i:1">Sleep, focus,<br><span class="accent">or tune out noise.</span></h1>
+      <p class="lede reveal" style="--i:2">Hushfield is an ambient sound app for iPhone and Android. Choose a Place, adjust its sounds, and set a sleep timer.</p>
+      <div class="stores reveal" id="download" style="--i:3">
+        <a class="store" data-link="appStore" data-placement="hero" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">
           <svg class="store__glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.3 1.2-2.4-.1 0-2.2-.9-2.2-3.2zM14.2 6.2c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
-          <span><small>Download on the</small>App&nbsp;Store</span>
+          <span><small>For iPhone</small>App&nbsp;Store</span>
         </a>
-        <a class="store" data-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener">
+        <a class="store" data-link="googlePlay" data-placement="hero" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener">
           <svg class="store__glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.3 2.6a1.4 1.4 0 0 0-.5 1.1v16.6c0 .45.18.84.5 1.09l8.9-9.4zM14.5 10.6 6.1 1.9l9.9 5.65zM17.9 12l2.9-1.65c.55-.32.55-1.38 0-1.7L17.9 7l-3.1 3.3zM6.1 22.1l8.4-8.7 1.5 1.6z"/></svg>
-          <span><small>Get it on</small>Google&nbsp;Play</span>
+          <span><small>For Android</small>Google&nbsp;Play</span>
         </a>
       </div>
-      <p class="trust reveal" style="--i:3">No account. No ads. Just sound.</p>
+      <p class="trust reveal" style="--i:4">Free to download · No account · No ads · Optional in-app purchases</p>
+      <a class="hero__jump" href="#library">Browse places</a>
     </div>
 
-    <div class="hero__stage reveal" style="--i:2">
+    <div class="hero__stage reveal" style="--i:3">
       <figure class="device device--hero">
         <div class="device__screen">
           <img src="assets/screenshots/corner-table-player.jpeg" alt="Hushfield playing Corner Table, Rain Outside, with a volume slider and controls for the session and sound layers." width="946" height="2048" fetchpriority="high" decoding="async">
@@ -69,13 +71,21 @@
         <span class="device__island" aria-hidden="true"></span>
       </figure>
     </div>
+    <div class="sound-preview reveal" style="--i:5">
+      <p>Hear a moment of café and rain</p>
+      <audio controls preload="metadata" aria-label="Play a 12-second Hushfield sound preview">
+        <source src="assets/audio/corner-table-preview.m4a" type="audio/mp4">
+        Your browser does not support audio playback.
+      </audio>
+      <small>12 seconds · Café murmur, night rain, and soft airflow from the app.</small>
+    </div>
   </section>
 
   <!-- ─────────────────── The tour · F4 step sequence ─────────────────── -->
   <section id="tour" class="tour">
     <div class="tour__head">
-      <h2>Four screens to somewhere quieter.</h2>
-      <p class="lede">Choose what you need, find a place, adjust its sounds, and return whenever you need a quieter moment.</p>
+      <h2>Find a place. Make it yours.</h2>
+      <p class="lede">Choose how you want to feel, then adjust the sound around you.</p>
     </div>
 
     <ol class="steps">
@@ -95,6 +105,7 @@
           </div>
           <figcaption class="notes">
             <ul><li class="note">Five ways to find your next place.</li></ul>
+            <a href="assets/screenshots/choose-purpose.jpeg" target="_blank" rel="noopener" aria-label="View purpose screen full size in a new tab">View purpose screen full size</a>
           </figcaption>
         </figure>
       </li>
@@ -102,25 +113,6 @@
       <li class="step step--flip">
         <div class="step__text">
           <span class="stage">2.0</span>
-          <h3>Find your place.</h3>
-          <p>Step into Corner Table, Rain Outside: café murmur, rain against the windows, and soft ventilation in one place.</p>
-        </div>
-        <figure class="step__figure">
-          <div class="device">
-            <div class="device__screen">
-              <img src="assets/screenshots/corner-table-detail.jpeg" alt="Details for Corner Table, Rain Outside, listing gentle café murmur, rain against street windows, and soft background ventilation." width="946" height="2048" loading="lazy" decoding="async">
-            </div>
-            <span class="device__island" aria-hidden="true"></span>
-          </div>
-          <figcaption class="notes">
-            <ul><li class="note">See the sounds inside before you enter.</li></ul>
-          </figcaption>
-        </figure>
-      </li>
-
-      <li class="step">
-        <div class="step__text">
-          <span class="stage">3.0</span>
           <h3>Make it yours.</h3>
           <p>Turn down the café or bring the rain closer. Make quick changes, adjust the sound levels, and save a version of the place you like.</p>
         </div>
@@ -133,30 +125,19 @@
           </div>
           <figcaption class="notes">
             <ul><li class="note">Change the balance as you listen.</li></ul>
-          </figcaption>
-        </figure>
-      </li>
-
-      <li class="step step--flip">
-        <div class="step__text">
-          <span class="stage">4.0</span>
-          <h3>Come back at one in the morning.</h3>
-          <p>Still awake? Hushfield puts your last place at the top of Home, ready to play again.</p>
-        </div>
-        <figure class="step__figure">
-          <div class="device">
-            <div class="device__screen">
-              <img src="assets/screenshots/home.jpeg" alt="Hushfield's Home screen invites you to continue Corner Table, Rain Outside and browse places for sleep." width="946" height="2048" loading="lazy" decoding="async">
-            </div>
-            <span class="device__island" aria-hidden="true"></span>
-          </div>
-          <figcaption class="notes">
-            <ul><li class="note">Continue listening, then a way back down.</li></ul>
+            <a href="assets/screenshots/adjust-place.jpeg" target="_blank" rel="noopener" aria-label="View sound controls full size in a new tab">View sound controls full size</a>
           </figcaption>
         </figure>
       </li>
 
     </ol>
+    <div class="tour__cta">
+      <p>Ready for a quieter moment?</p>
+      <div class="stores">
+        <a class="store" data-link="appStore" data-placement="tour" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener" aria-label="Download Hushfield for iPhone on the App Store">App Store</a>
+        <a class="store" data-link="googlePlay" data-placement="tour" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener" aria-label="Download Hushfield for Android on Google Play">Google Play</a>
+      </div>
+    </div>
   </section>
 
   <!-- ───────────────────────── The library ───────────────────────── -->
@@ -197,7 +178,7 @@
       </div>
       <div class="pledge">
         <dt>Local first</dt>
-        <dd>Your sounds, mixes, and preferences stay on your device wherever that is technically applicable.</dd>
+        <dd>Your listening history, saved mixes, and preferences stay on your device. We send limited pseudonymous usage events for product analytics.</dd>
       </div>
       <div class="pledge">
         <dt>You&rsquo;re in control</dt>
@@ -211,13 +192,13 @@
   <section class="close" id="close">
     <h2>Find somewhere<br><span class="accent">quieter.</span></h2>
     <div class="stores">
-      <a class="store" data-link="appStore" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">
+      <a class="store" data-link="appStore" data-placement="footer" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">
         <svg class="store__glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.3 1.2-2.4-.1 0-2.2-.9-2.2-3.2zM14.2 6.2c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2z"/></svg>
-        <span><small>Download on the</small>App&nbsp;Store</span>
+        <span><small>For iPhone</small>App&nbsp;Store</span>
       </a>
-      <a class="store" data-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener">
+      <a class="store" data-link="googlePlay" data-placement="footer" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener">
         <svg class="store__glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.3 2.6a1.4 1.4 0 0 0-.5 1.1v16.6c0 .45.18.84.5 1.09l8.9-9.4zM14.5 10.6 6.1 1.9l9.9 5.65zM17.9 12l2.9-1.65c.55-.32.55-1.38 0-1.7L17.9 7l-3.1 3.3zM6.1 22.1l8.4-8.7 1.5 1.6z"/></svg>
-        <span><small>Get it on</small>Google&nbsp;Play</span>
+        <span><small>For Android</small>Google&nbsp;Play</span>
       </a>
     </div>
   </section>
@@ -243,8 +224,9 @@
 
 <!-- C4 · Sticky bottom bar — appears once the tour is underway -->
 <aside class="cta-sticky" id="ctaSticky" hidden>
-  <p>A library of atmospheres. No account.</p>
-  <a class="btn btn--fill" data-link="appStore" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">Get Hushfield</a>
+  <p>Get Hushfield</p>
+  <a class="btn" data-link="appStore" data-placement="sticky" href="https://apps.apple.com/app/id6802781534" target="_blank" rel="noopener">App Store</a>
+  <a class="btn" data-link="googlePlay" data-placement="sticky" href="https://play.google.com/store/apps/details?id=com.inethan18.hushfield" target="_blank" rel="noopener">Google Play</a>
 </aside>
 
 </body>

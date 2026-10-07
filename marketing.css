@@ -135,8 +135,7 @@ a { color: inherit; }
 .wordmark--sm { font-size: 1.2rem; }
 .wordmark--sm .wordmark__mark { width: 1.35rem; height: 1.35rem; }
 
-/* N5 collapse: below 60rem the pill keeps the wordmark and the CTA only —
-   the three links live in the page's own flow and in the footer. */
+/* N5 collapse: the hero keeps a Library jump when the pill loses its links. */
 .nav-pill__links {
   display: none;
   gap: var(--space-md);
@@ -165,7 +164,7 @@ a { color: inherit; }
   .nav-pill { gap: var(--space-sm); padding: 0.3rem 0.3rem 0.3rem 0.55rem; }
   .wordmark { font-size: 1.05rem; gap: 0.4rem; }
   .wordmark__mark { width: 1.25rem; height: 1.25rem; }
-  .nav-pill .btn { padding: 0.5rem 0.75rem; font-size: 0.7rem; }
+  .nav-pill .btn { padding: 0.5rem 0.75rem; font-size: var(--text-sm); }
 }
 
 /* ─────────────────────────  Buttons & stores  ───────────────────────── */
@@ -220,18 +219,47 @@ a { color: inherit; }
 }
 .store small {
   display: block;
-  font-size: 0.6rem;
+  font-size: var(--text-sm);
   font-weight: 500;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-ink-muted);
 }
 .store:active { transform: translateY(1px); }
+.hero .store, .tour__cta .store {
+  background: var(--color-paper-3);
+  border-color: var(--color-accent-soft);
+}
+@media (max-width: 37.49rem) {
+  .hero .stores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero .store { min-width: 0; gap: 0.4rem; padding-inline: 0.6rem; }
+  .hero .store__glyph { width: 1.1rem; height: 1.1rem; }
+  .hero .store span { font-size: 0.9rem; }
+  .hero .store small { font-size: 0.75rem; letter-spacing: 0.01em; }
+}
 
 .trust {
   margin-block-start: var(--space-md);
   font-size: var(--text-sm);
   color: var(--color-ink-muted);
+}
+.sound-preview {
+  max-width: var(--measure);
+  padding-block-start: var(--space-md);
+  border-block-start: var(--rule-hair) solid var(--color-rule);
+}
+.sound-preview p { font-size: var(--text-sm); font-weight: 700; }
+.sound-preview audio {
+  display: block;
+  width: min(100%, 22rem);
+  margin-block: var(--space-xs);
+  color-scheme: dark;
+}
+.sound-preview small {
+  display: block;
+  color: var(--color-ink-muted);
+  font-size: var(--text-xs);
+  line-height: 1.45;
 }
 
 .link-typo {
@@ -335,8 +363,29 @@ a { color: inherit; }
   padding-block: calc(var(--space-3xl) + 1rem) var(--space-2xl);
 }
 .hero__copy { max-width: 38rem; }
+.hero__kicker {
+  margin-block-end: var(--space-md);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
 .hero__stage { display: flex; justify-content: center; }
 .device--hero { --dev-w: min(320px, 76vw); transform: rotate(2.5deg); }
+.hero__jump { display: none; }
+
+@media (max-width: 59.99rem) {
+  .hero__jump {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-block-start: var(--space-sm);
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-underline-offset: 0.2em;
+  }
+}
 
 /* ───────────────────  The tour · F4 step sequence  ─────────────────── */
 
@@ -359,6 +408,16 @@ a { color: inherit; }
   border-block-end: var(--rule-hair) solid var(--color-rule);
 }
 .step:last-child { border-block-end: 0; }
+.tour__cta {
+  padding-block: var(--space-lg);
+  border-block-start: var(--rule-hair) solid var(--color-rule);
+}
+.tour__cta p {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1.1;
+}
+.tour__cta .stores { margin-block-start: var(--space-md); }
 
 .stage {
   display: block;
@@ -386,6 +445,16 @@ a { color: inherit; }
 
 /* F5 · annotated screenshot — notes flow as a list on narrow screens */
 .notes ul { margin: 0; padding: 0; list-style: none; }
+.notes a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-block-start: var(--space-xs);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}
 .note {
   margin-block-start: var(--space-md);
   padding-block-start: var(--space-sm);
@@ -538,12 +607,24 @@ a { color: inherit; }
 .cta-sticky[hidden] { display: none; }
 .cta-sticky.is-shown { transform: translateY(0); }
 .cta-sticky p {
+  margin-inline-end: auto;
   font-size: var(--text-sm);
   color: var(--color-ink-muted);
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.cta-sticky .btn {
+  flex: none;
+  background: var(--color-paper-2);
+  border-color: var(--color-rule-strong);
+}
+.cta-sticky .btn:hover { border-color: var(--color-accent); }
+
+@media (max-width: 37.49rem) {
+  .cta-sticky { justify-content: center; gap: var(--space-sm); }
+  .cta-sticky p { display: none; }
 }
 
 /* ─────────────────────────  Load reveal  ───────────────────────── */
@@ -574,9 +655,12 @@ a { color: inherit; }
   .hero {
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
     align-items: center;
-    gap: var(--space-2xl);
+    column-gap: var(--space-2xl);
+    row-gap: var(--space-md);
     padding-block: calc(var(--space-3xl) + 3rem) var(--space-3xl);
   }
+  .hero__stage { grid-column: 2; grid-row: 1 / span 2; }
+  .sound-preview { grid-column: 1; grid-row: 2; }
 
   .tour__head {
     display: grid;
